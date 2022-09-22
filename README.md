@@ -35,6 +35,6 @@ after several program runs, the best average accuracy value is that of **Gradien
 ## Model tuning
 "gradient_model_tuning()" implement two algorithms: **halving random search** and **Bayes search**. The hyperparameters to be optimized are *learning rate*, *number of estimators* and *max depth*.
 ## Final test
-The final test is made on the test_set, a **confusion matrix** is plotted in the end of the program: it shows true positive, true negative and false positive and false negative. <br />
+The final test is made on the test_set, a **confusion matrix** is plotted in the end of the program: it shows the number of true positive, true negative,false positive and false negative predictions. <br />
 The final accuracy value is approximately 0.75 (=75%), that's quite good for  our purpose.
 
