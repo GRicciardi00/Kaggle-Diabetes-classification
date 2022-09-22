@@ -9,15 +9,21 @@ The function "data_analysis" allow the user to choose which report choose: 0 is 
 There *label* is "Diabetes binary", there are 3 numerical features and 18 categorical features (for an accurate description of each features visit the kaggle page). <br />
 The **general report** is a matplotlib subplot, a 6x4 matrix: each cell is an histogram. <br />
 The **detailed report** make a plot of each feature and  calculates the mean, variance, mode and standard deviation <br />
+<img src=https://github.com/GRicciardi00/Kaggle-Diabetes-classification/blob/main/Screenshots/general%20report.png width="50%" height="50%">
+<img src=https://github.com/GRicciardi00/Kaggle-Diabetes-classification/blob/main/Screenshots/detailed%20report.png width="50%" height="50%">
+<img src=https://github.com/GRicciardi00/Kaggle-Diabetes-classification/blob/main/Screenshots/detailed%20report2.png width="50%" height="50%">
 
 ## Dimensionality reduction
 "dimensionality reduction()" function implement two algorithms from *scikitlearn*: **PCA** and **TSN-E** for the dimensionality reduction, then plot a 3D graphic for visualize the results: green points are positive to diabetes while yellow negative.
-These two algorithms are *unsupervisioned*, so they are not important for machine learning purposes.
+These two algorithms are *unsupervisioned*, so they are not important for machine learning purposes. <br />
+<img src=https://github.com/GRicciardi00/Kaggle-Diabetes-classification/blob/main/Screenshots/dimensionality%20reduction.png width="50%" height="50%">
+
 ## Preprocessing: correlation matrix & feature selection
 The ''dimensionality_reduction()" function generate a **correlation matrix** that exploit correlations between each feature and export it on a excel file. <br />
 *Please note* that high correlation value between two feautres doesn't mean there is not necessarily a *causal relationship* between the two.<br />
-After plotting the correlation matrix, the function proceeds with the **features selection** of the 7 best features using the SelectKmodel method of the Sklearn library, the unit of measurement used is *mutual information*
-
+After plotting the correlation matrix, the function proceeds with the **features selection** of the 7 best features using the SelectKmodel method of the Sklearn library, the unit of measurement used is *mutual information* <br />
+<img src=https://github.com/GRicciardi00/Kaggle-Diabetes-classification/blob/main/Screenshots/correlation%20matrix.png width="50%" height="50%">
+<img src=https://github.com/GRicciardi00/Kaggle-Diabetes-classification/blob/main/Screenshots/feature%20selection.png width="50%" height="50%">
 
 ## Neural network approach
 For neural network approach the program make 2 different neural network, for both models the number of epochs is 10 to avoid *overfitting* and and the metric for evaluating performance is **accuracy**.
@@ -31,10 +37,14 @@ For neural network approach the program make 2 different neural network, for bot
  - Gradient Boosting 
  - RandomForest
  - XBoosting
-after several program runs, the best average accuracy value is that of **Gradient Boosting**.
+After several program runs, the best average accuracy value is that of **Gradient Boosting**.
+
 ## Model tuning
-"gradient_model_tuning()" implement two algorithms: **halving random search** and **Bayes search**. The hyperparameters to be optimized are *learning rate*, *number of estimators* and *max depth*.
+"gradient_model_tuning()" implement two algorithms: **halving random search** and **Bayes search**. The hyperparameters to be optimized are *learning rate*, *number of estimators* and *max depth*. <br />
+<img src=https://github.com/GRicciardi00/Kaggle-Diabetes-classification/blob/main/Screenshots/bayes%20.png width="50%" height="50%">
+<img src=https://github.com/GRicciardi00/Kaggle-Diabetes-classification/blob/main/Screenshots/model%20tuning.png width="50%" height="50%">
+
 ## Final test
 The final test is made on the test_set, a **confusion matrix** is plotted in the end of the program: it shows the number of true positive, true negative,false positive and false negative predictions. <br />
-The final accuracy value is approximately 0.75 (=75%), that's quite good for  our purpose.
-
+The final accuracy value is approximately 0.75 (=75%), that's quite good for  our purpose. <br />
+<img src=https://github.com/GRicciardi00/Kaggle-Diabetes-classification/blob/main/Screenshots/confusion%20matrix.png width="50%" height="50%">
