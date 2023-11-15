@@ -38,7 +38,7 @@ For neural network approach the program make 2 different neural network, for bot
  - Gradient Boosting 
  - RandomForest
  - XBoosting
-After several program runs, the best average accuracy value is that of **Gradient Boosting**.
+<br />After several program runs, the best average accuracy value is that of **Gradient Boosting**.
 
 ## Model tuning
 "gradient_model_tuning()" implement two algorithms: **halving random search** and **Bayes search**. The hyperparameters to be optimized are *learning rate*, *number of estimators* and *max depth*. <br />
