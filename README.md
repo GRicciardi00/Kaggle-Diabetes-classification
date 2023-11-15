@@ -37,7 +37,7 @@ For neural network approach the program make 2 different neural network, for bot
  - Decision Tree Classifier
  - Gradient Boosting 
  - RandomForest
- - XBoosting
+ - XBoosting <br />
 After several program runs, the best average accuracy value is that of **Gradient Boosting**.
 
 ## Model tuning
